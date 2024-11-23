@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8f5e9; /* Light green background */
+    background-color: white; /* Light green background */
 }
 
 /* Login Container */
@@ -10,7 +10,28 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e8f5e9; /* Light green background */
+    background-color: red; /* Light green background */
+    background-image: url(../../../public/images/loginBG.jpg);
+    background-position: center;
+}
+
+.changePage {
+    text-align: end;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.changePage a {
+    color: #1eb2a6; /* Change color on hover */
+}
+
+.changePage a:hover{
+    color: #2d716c;
+}
+
+.changePage a:hover{
+    color: #2d716c;
 }
 
 /* Login Box */
@@ -25,7 +46,7 @@ body {
 
 /* Login Title */
 .login-title {
-    color: #2e7d32; /* Dark green color */
+    color: #1eb2a6; /* Dark green color */
     margin-bottom: 20px;
 }
 
@@ -46,7 +67,7 @@ body {
 
 /* Login Button */
 .login-button {
-    background-color: #2e7d32; /* Dark green color */
+    background-color: #1eb2a6; /* Dark green color */
     color: #ffffff;
     padding: 10px 15px;
     border: none;
@@ -57,5 +78,5 @@ body {
 }
 
 .login-button:hover {
-    background-color: #1b5e20; /* Darker green on hover */
+    background-color: #2d716c; /* Darker green on hover */
 }

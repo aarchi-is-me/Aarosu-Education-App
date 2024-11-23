@@ -1,5 +1,6 @@
 import React from 'react';
-import './Login.css'; // Make sure this path matches the location of your CSS file
+import { Link } from 'react-router-dom';
+import './LoginRegister.css'; // Make sure this path matches the location of your CSS file
 
 function Login() {
     return (
@@ -15,6 +16,9 @@ function Login() {
                         <label htmlFor="password">Password:</label>
                         <input type="password" id="password" className="input-field" placeholder="Enter your password" />
                     </div>
+                    <div className="changePage">Not yet Registered? <Link to="/register">Register</Link></div>
+                    
+                    {/* <div className="changePage"><a href='./Register.jsx'>Register</a></div> */}
                     <button type="submit" className="login-button">Login</button>
                 </form>
             </div>
