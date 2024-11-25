@@ -18,15 +18,15 @@ function App() {
       <Router> 
         <Header />
         <Routes>
-          <Route path='/login' element={<LoginPage></LoginPage>} />
-          <Route path='/register' element={<RegisterPage></RegisterPage>} />
-          <Route path='/' element={<Home></Home>} />
-          <Route path='/about' element={<About></About>} />
-          <Route path='/courses' element={<CourseHome></CourseHome>} />
+          <Route path='/login' element={<LoginPage/>} />
+          <Route path='/signin' element={<RegisterPage/>} />
+          <Route path='/' element={<Home/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/courses' element={<CourseHome/>} />
           
-          <Route path='/pricing' element={<Pricing></Pricing>} />
+          <Route path='/pricing' element={<Pricing/>} />
           
-          <Route path='/contact' element={<Contact></Contact>} />
+          <Route path='/contact' element={<Contact/>} />
           </Routes>
         <Footer />
       </Router>
