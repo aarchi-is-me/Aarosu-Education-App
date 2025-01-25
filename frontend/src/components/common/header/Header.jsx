@@ -2,9 +2,12 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./header.css"
+// import Login from "../../LoginAndRegister/LoginPage"
+import { Button } from "antd";
 
 const Header = () => {
   const [click, setClick] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(false)
 
   return (
     <>
@@ -33,12 +36,20 @@ const Header = () => {
             <li>
               <Link to='/contact'>Contact</Link>
             </li>
-            <li>
-              <Link to='/login'>Login</Link>
-            </li>
+            {/* <li>
+              <Link to='/log-in'>Login</Link>
+            </li> */}
           </ul>
           <div className='start'>
-            <div className='button'>GET CERTIFICATE</div>
+            <div className='button'>
+              {loggedIn ?
+                "GET CERTIFICATE"
+                :
+                <Link to='/log-in'>
+                  <Button className="login-button" onClick={() => setLoggedIn(false)}>Login</Button>
+                </Link>
+              }
+            </div>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
